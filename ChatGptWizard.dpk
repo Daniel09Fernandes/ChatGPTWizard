@@ -40,7 +40,8 @@ requires
   FireDAC,
   FireDACCommonDriver,
   FireDACCommon,
-  FireDACSqliteDriver;
+  FireDACSqliteDriver,
+  vclwinx;
 
 contains
   UChatGptMain in 'UChatGptMain.pas',
@@ -57,6 +58,7 @@ contains
   UWriteSonicThread in 'Utils\UWriteSonicThread.pas',
   UConsts in 'Utils\UConsts.pas',
   UYouChatThread in 'Utils\UYouChatThread.pas',
-  UEditorHelpers in 'Utils\UEditorHelpers.pas';
+  UEditorHelpers in 'Utils\UEditorHelpers.pas',
+  UAbout in 'Forms\UAbout.pas' {Frm_About};
 
 end.

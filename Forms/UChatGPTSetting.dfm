@@ -3,8 +3,8 @@ object Frm_Setting: TFrm_Setting
   Top = 0
   BorderStyle = bsToolWindow
   Caption = 'Setting'
-  ClientHeight = 584
-  ClientWidth = 461
+  ClientHeight = 572
+  ClientWidth = 453
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,12 +19,14 @@ object Frm_Setting: TFrm_Setting
   object pgcSetting: TPageControl
     Left = 0
     Top = 0
-    Width = 461
-    Height = 538
+    Width = 453
+    Height = 526
     ActivePage = tsMainSetting
     Align = alClient
     TabOrder = 0
     OnChange = pgcSettingChange
+    ExplicitWidth = 461
+    ExplicitHeight = 538
     object tsMainSetting: TTabSheet
       Caption = 'Main Setting'
       object pnlMain: TPanel
@@ -142,7 +144,6 @@ object Frm_Setting: TFrm_Setting
                 'code-davinci-002'
                 'text-davinci-002'
                 'gpt-4'
-                'gpt-4-32k'
                 'gpt-4-0314')
             end
             object chk_AnimatedLetters: TCheckBox
@@ -165,7 +166,7 @@ object Frm_Setting: TFrm_Setting
               Height = 23
               Alignment = taCenter
               EditLabel.Width = 57
-              EditLabel.Height = 15
+              EditLabel.Height = 23
               EditLabel.Caption = 'Timeout(s)'
               LabelPosition = lpLeft
               LabelSpacing = 5
@@ -178,10 +179,12 @@ object Frm_Setting: TFrm_Setting
         object pnlOther: TPanel
           Left = 1
           Top = 185
-          Width = 451
-          Height = 322
+          Width = 443
+          Height = 310
           Align = alClient
           TabOrder = 1
+          ExplicitWidth = 451
+          ExplicitHeight = 322
           object grp_History: TGroupBox
             Left = 1
             Top = 1
@@ -200,7 +203,7 @@ object Frm_Setting: TFrm_Setting
               BevelOuter = bvLowered
               TabOrder = 0
               DesignSize = (
-                439
+                431
                 71)
               object lbl_ColorPicker: TLabel
                 Left = 197
@@ -212,7 +215,7 @@ object Frm_Setting: TFrm_Setting
               object chk_History: TCheckBox
                 Left = 20
                 Top = 16
-                Width = 55
+                Width = 47
                 Height = 17
                 Anchors = [akLeft, akTop, akRight]
                 BiDiMode = bdLeftToRight
@@ -220,6 +223,7 @@ object Frm_Setting: TFrm_Setting
                 ParentBiDiMode = False
                 TabOrder = 0
                 OnClick = chk_HistoryClick
+                ExplicitWidth = 55
               end
               object lbEdt_History: TLabeledEdit
                 Left = 79
@@ -227,9 +231,8 @@ object Frm_Setting: TFrm_Setting
                 Width = 318
                 Height = 23
                 EditLabel.Width = 55
-                EditLabel.Height = 15
+                EditLabel.Height = 23
                 EditLabel.Caption = 'Location:  '
-                EditLabel.Layout = tlCenter
                 LabelPosition = lpLeft
                 TabOrder = 1
                 Text = ''
@@ -264,11 +267,12 @@ object Frm_Setting: TFrm_Setting
           object grp_Proxy: TGroupBox
             Left = 1
             Top = 164
-            Width = 449
+            Width = 441
             Height = 157
             Align = alTop
             Caption = 'Proxy Setting'
             TabOrder = 1
+            ExplicitWidth = 449
             object pnlProxy: TPanel
               AlignWithMargins = True
               Left = 5
@@ -284,9 +288,8 @@ object Frm_Setting: TFrm_Setting
                 Width = 318
                 Height = 23
                 EditLabel.Width = 28
-                EditLabel.Height = 15
+                EditLabel.Height = 23
                 EditLabel.Caption = 'Host:'
-                EditLabel.Layout = tlCenter
                 LabelPosition = lpLeft
                 TabOrder = 0
                 Text = ''
@@ -298,9 +301,8 @@ object Frm_Setting: TFrm_Setting
                 Width = 66
                 Height = 23
                 EditLabel.Width = 25
-                EditLabel.Height = 15
+                EditLabel.Height = 23
                 EditLabel.Caption = 'Port:'
-                EditLabel.Layout = tlCenter
                 LabelPosition = lpLeft
                 NumbersOnly = True
                 TabOrder = 1
@@ -322,9 +324,8 @@ object Frm_Setting: TFrm_Setting
                 Width = 138
                 Height = 23
                 EditLabel.Width = 58
-                EditLabel.Height = 15
+                EditLabel.Height = 23
                 EditLabel.Caption = 'UserName:'
-                EditLabel.Layout = tlCenter
                 LabelPosition = lpLeft
                 TabOrder = 3
                 Text = ''
@@ -336,9 +337,8 @@ object Frm_Setting: TFrm_Setting
                 Width = 138
                 Height = 23
                 EditLabel.Width = 53
-                EditLabel.Height = 15
+                EditLabel.Height = 23
                 EditLabel.Caption = 'Password:'
-                EditLabel.Layout = tlCenter
                 LabelPosition = lpLeft
                 TabOrder = 4
                 Text = ''
@@ -349,11 +349,12 @@ object Frm_Setting: TFrm_Setting
           object grp_Other: TGroupBox
             Left = 1
             Top = 97
-            Width = 449
+            Width = 441
             Height = 67
             Align = alTop
             Caption = 'IDE && Other'
             TabOrder = 2
+            ExplicitWidth = 449
             object pnlIDE: TPanel
               AlignWithMargins = True
               Left = 5
@@ -508,7 +509,7 @@ object Frm_Setting: TFrm_Setting
               Width = 330
               Height = 23
               EditLabel.Width = 43
-              EditLabel.Height = 15
+              EditLabel.Height = 23
               EditLabel.Caption = 'API Key:'
               LabelPosition = lpLeft
               LabelSpacing = 5
@@ -522,7 +523,7 @@ object Frm_Setting: TFrm_Setting
               Width = 330
               Height = 23
               EditLabel.Width = 51
-              EditLabel.Height = 15
+              EditLabel.Height = 23
               EditLabel.Caption = 'Base URL:'
               LabelPosition = lpLeft
               LabelSpacing = 5
@@ -564,7 +565,7 @@ object Frm_Setting: TFrm_Setting
               Width = 330
               Height = 23
               EditLabel.Width = 43
-              EditLabel.Height = 15
+              EditLabel.Height = 23
               EditLabel.Caption = 'API Key:'
               LabelPosition = lpLeft
               LabelSpacing = 5
@@ -578,7 +579,7 @@ object Frm_Setting: TFrm_Setting
               Width = 330
               Height = 23
               EditLabel.Width = 51
-              EditLabel.Height = 15
+              EditLabel.Height = 23
               EditLabel.Caption = 'Base URL:'
               LabelPosition = lpLeft
               LabelSpacing = 5
@@ -592,17 +593,19 @@ object Frm_Setting: TFrm_Setting
   end
   object pnlBottom: TPanel
     Left = 0
-    Top = 538
-    Width = 461
+    Top = 526
+    Width = 453
     Height = 46
     Align = alBottom
     BevelOuter = bvLowered
     TabOrder = 1
+    ExplicitTop = 538
+    ExplicitWidth = 461
     DesignSize = (
-      461
+      453
       46)
     object Btn_Default: TButton
-      Left = 275
+      Left = 259
       Top = 10
       Width = 89
       Height = 28
@@ -610,9 +613,10 @@ object Frm_Setting: TFrm_Setting
       Caption = 'Load Defaults'
       TabOrder = 0
       OnClick = Btn_DefaultClick
+      ExplicitLeft = 275
     end
     object Btn_Save: TButton
-      Left = 366
+      Left = 350
       Top = 10
       Width = 89
       Height = 28
@@ -620,6 +624,7 @@ object Frm_Setting: TFrm_Setting
       Caption = 'Save && Close'
       TabOrder = 1
       OnClick = Btn_SaveClick
+      ExplicitLeft = 366
     end
   end
 end

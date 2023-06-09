@@ -7,12 +7,8 @@
 <a href="https://www.embarcadero.com/products/rad-studio"><img src="https://img.shields.io/badge/Delphi_RAD_Studio-B22222?style=for-the-badge&logo=delphi&logoColor=white" alt="Delphi" /></a>
 &nbsp;
 <a href="https://www.buymeacoffee.com/adehbanr" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-<a href="https://github.com/sponsors/AliDehbansiahkarbon"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" alt="sponsor"/></a>
-&nbsp;
-<a href="https://github.com/AliDehbansiahkarbon"><img src="https://img.shields.io/github/followers/AliDehbansiahkarbon.svg?style=social&label=Follow&maxAge=2592000" alt="github profile"></a>
 <br />
 <img src="https://img.shields.io/github/license/AliDehbansiahkarbon/ChatGPTWizard.svg" alt="license">
-<img src="https://img.shields.io/github/downloads/AliDehbansiahkarbon/ChatGPTWizard/total.svg" alt="downloads">
 <img src="https://img.shields.io/github/forks/AliDehbansiahkarbon/ChatGPTWizard.svg" alt="forks">
 <img src="https://img.shields.io/github/stars/AliDehbansiahkarbon/ChatGPTWizard.svg" alt="stars">
 <img src="https://img.shields.io/github/watchers/AliDehbansiahkarbon/ChatGPTWizard.svg" alt="watchers">
@@ -22,23 +18,41 @@
 <img src="https://img.shields.io/github/last-commit/AliDehbansiahkarbon/ChatGPTWizard.svg" alt="last-commit">
 
 
-
 <h2>An AI plug-in for Embarcadero RAD Studio IDE.</h2>
 
 <h3>First Plugin Ever to support ChatGPT, Writesonic, and YouChat!</h3>
-<br /
 
-#### **NOTE: You will need an API key to use this plugin. see the [API section](#platforms)**
+#### **PLEASE NOTE THAT You will need an API key to use this plugin. see the [API section](#platforms) to Generate an API key**
+#### Some API Keys are Limited to a certain usage, after that you will need to purchase credits in order to keep using them
+
+
+## Key Features:
+
+- Free text question form.
+- Dockable question form.
+- Inline questions(in the editor).
+- Context menu options to help you to find bugs, write tests, optimize code, add comments, etc...
+- Class view(Code conversion, code optimizing, test units, and other options per class).
+- Predefined Questions for class view.
+- History to save your tokens on OpenAI !
+- Fuzzy string match searches in the history.
+- Animated letters(Like the website).
+- AI Code Translator
+- Proxy server options. 
+- Supports [Writesonic](https://writesonic.com/chat) AI as the second AI service.
+- Supports [YouChat](https://you.com/code) AI as the third AI service.
+
+
 
 <br />
 
 ## Demo
 
-Short1(ChatGPT)
+Short1(all features)
 
-<a href="https://www.youtube.com/watch?v=vUgHg3ZPvXI" target="_blank"><img src="https://img.youtube.com/vi/vUgHg3ZPvXI/0.jpg" /></a>
+<a href="https://www.youtube.com/watch?v=jHFmmmrk3BU" target="_blank"><img src="https://img.youtube.com/vi/vUgHg3ZPvXI/0.jpg" /></a>
 
-Short2(Writesonic & YouChat)
+Short2(ChatGPT, Writesonic, and YouChat actions at the same time)
 
 <a href="https://youtu.be/tEiKmalzZo8" target="_blank"><img src="https://img.youtube.com/vi/vUgHg3ZPvXI/0.jpg" /></a>
 
@@ -78,8 +92,12 @@ This Plugin Supports the following AI Services:
 
 
 ## How to Install
+1- [Getit package manager](https://getitnow.embarcadero.com/chatgptwizard/)
 
-Open the project, right-click on the project in the project manager, build, and install.
+2- [Delphinus package manager](https://github.com/Memnarch/Delphinus/wiki/Installing-Delphinus) - you can install Delphinus package manager and install ChatGPTWizard there. (Delphinus-Support)
+
+3- Direct installation - Open the project in Delphi, right-click on the project node in the project manager, build, and install.
+
 
 <br />
 
@@ -126,7 +144,6 @@ So now you are able to get multiple different answers based on any question, com
 If you need to use the ChatGPT inside the editor you need to type a question directly inside the code editor and surround it with `cpt:` at the beginning and `:cpt` at the end of the question then press `Ctrl+Shift+Alt+A` or simply select "Ask" from the editor's context menu by right-clicking on the selected text.
 
 
-
 **Usage Scenario for Inline Questions**
 
 Open a new `vcl` applicatiopn project, add a new unit and remove all the code from it! and type the following line, 
@@ -134,9 +151,6 @@ select all and press `Ctrl+Shift+Alt+A`.
 
 `cpt:Create a full unit in Delphi including a class to create an XML file.:cpt`
 
-<br />
-
-![image](https://user-images.githubusercontent.com/5601608/215461813-7ecf4555-b3a2-4c0e-b85e-6069ead6a3d9.png)
 
 <br />
 
@@ -155,6 +169,33 @@ select all and press `Ctrl+Shift+Alt+A`.
 Use the **"ChatGPT Dockable"** menu from the main menu to show the dockable form and try to dock the form to the left or right side panel of the IDE, and enjoy with your new Google killer assistant!
 <br />
 
+
+
+<br />
+
+
+## Context Menu
+
+Context Menu for Selected text or a block of code. The Result will be inserted after the selected text as a multi line comment between two brackets `{}`
+
+**Options**
+
+- Ask
+- Add Test  - Will try to create unit test for the selected text.
+- Find Bugs - Find fugs in the selected text.
+- Optimize - Will Optimize the selected text.
+- Add Comments - Will add necessary comments to the selected code.
+- Complete code - Will try to add any missing code to the selected code.
+- Explain code - will explain that what does the selected code in Delphi.
+
+<br />
+<br />
+
+![image](https://github.com/AliDehbansiahkarbon/ChatGPTWizard/assets/5601608/51bf3bd9-ab79-4a3c-be18-9e3f7b0cdc06)
+
+<br />
+
+![image_2023-04-25_16-08-40](https://user-images.githubusercontent.com/24512608/236584029-c3982eb3-1824-4146-a611-7c861b034e28.png)
 
 
 <br />
@@ -229,6 +270,7 @@ Another thing is, You don't have to do that because it will work fine when you o
 **Special Thanks to**
 
 - [Ali Sawari](https://github.com/AliSawari)
+- [limelect](https://github.com/limelect)
 
 
 <br />
